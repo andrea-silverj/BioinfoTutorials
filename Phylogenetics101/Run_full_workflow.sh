@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # 1) Identify orthologues genes with Orthofinder
-./Step1_run_ofinder.sh*
+./Step1_run_ofinder.sh
 echo "Step 1 COMPLETED"
 
 # 2) Align genes with MAFFT
