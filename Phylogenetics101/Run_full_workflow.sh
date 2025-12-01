@@ -5,7 +5,7 @@
 echo "Step 1 COMPLETED"
 
 # 2) Align genes with MAFFT
-Step2_align_sco.sh
+./Step2_align_sco.sh
 echo "Step 2 COMPLETED"
 
 # 3) Trim alignments with TrimAl
