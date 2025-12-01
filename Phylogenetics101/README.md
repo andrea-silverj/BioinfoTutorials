@@ -15,6 +15,7 @@ This tutorial is based on a phylogenetics workshop I lead with other colleagues 
 Install required programs using conda, clone the repo and create a meaningfull directory structure.
 
 ```
+# Set the environment
 conda create --name phylogen101 python=3.8
 conda activate phylogen101
 conda install -c bioconda mafft trimal amas iqtree=2 raxml=8
@@ -23,6 +24,7 @@ conda install -c bioconda mafft trimal amas iqtree=2 raxml=8
 
 conda create -f phylogen101.yml
 
+# Install Orthofinder
 wget https://github.com/davidemms/OrthoFinder/releases/download/2.5.1/OrthoFinder.tar.gz
 tar -xzvf OrthoFinder.tar.gz
 chmod 777 -R OrthoFinder
@@ -31,6 +33,11 @@ cd OrthoFinder
 export PATH=$PATH:$(pwd)
 cd ..
 
+# Install FigTree to visualize trees
+wget https://github.com/rambaut/figtree/releases/download/v1.4.4/FigTree.v1.4.4.zip
+unzip FigTree.v1.4.4.zip
+
+# Clone the Phylogenetics101 GitHub repo
 git clone https://github.com/andrea-silverj/BioinfoTutorials.git
 cd BioinfoTutorials/Phylogenetics101
 mkdir Analyses
@@ -120,3 +127,10 @@ raxmlHPC-PTHREADS-SSE3 -s _trimmed.aln -n narnaviridae_trimmed -m PROTGAMMALG -T
 
 ```
 *If unsure about the model (or your model is not implemented in RAxML), set -m to PROTGAMMAAUTO*
+
+
+#### Run the full workflow
+```
+./Run_full_workflow.sh
+
+```
