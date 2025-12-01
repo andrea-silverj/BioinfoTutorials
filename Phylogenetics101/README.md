@@ -47,7 +47,7 @@ mkdir -p Analyses/{Alignments,IQTREE,Orthofinder}
 5. Model selection.
 6. Tree inference.
 
-#### 1. Identify orthologues genes ([Orthofinder](https://github.com/davidemms/OrthoFinder))
+#### 1. Identify orthologous genes ([Orthofinder](https://github.com/davidemms/OrthoFinder))
 
 Run Orthofinder:
 
