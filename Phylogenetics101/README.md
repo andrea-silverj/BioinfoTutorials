@@ -31,9 +31,10 @@ cd OrthoFinder
 export PATH=$PATH:$(pwd)
 cd ..
 
-git clone https://github.com/andrea-silverj/BioinfoTutorials/Phylogenetics101
-mkdir -p Analyses/{Alignments,IQTREE,Orthofinder}
-
+git clone https://github.com/andrea-silverj/BioinfoTutorials.git
+cd BioinfoTutorials/Phylogenetics101
+mkdir Analyses
+chmod -R 777 *
 ```
 
 ## Phylogenetic inference under a maximum likelihood (ML) framework
