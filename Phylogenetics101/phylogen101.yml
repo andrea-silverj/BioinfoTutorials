@@ -1,0 +1,12 @@
+name: phylogen101
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.8
+  - mafft
+  - trimal
+  - amas
+  - iqtree=2
+  - raxml=8
